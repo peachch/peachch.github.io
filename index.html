@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuxi Sun - Home</title>
-  <meta name="description" content="Personal homepage of Yuxi Sun (孙雨溪) — NLP researcher working on trustworthy LLMs and causal reasoning.">
+  <meta name="description" content="Personal homepage of Yuxi Sun (孙雨溪) — researcher working on trustworthy and controllable LLM agents, reliable reasoning, RAG, and evaluation.">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/avatar.jpg">
 </head>
@@ -31,30 +31,28 @@
       <div class="profile-card">
         <img class="avatar" src="assets/avatar.jpg" alt="avatar">
         <h1>Yuxi Sun <span class="en-name">(孙雨溪)</span></h1>
-        <!-- TODO: 确认你的职位信息，例如：
-             <p class="affiliation">Ph.D. Student in Computer Science<br>Hong Kong Baptist University</p> -->
-        <p class="affiliation">Ph.D. Student<br>Hong Kong Baptist University 🇭🇰</p>
+        <p class="affiliation">Ph.D. Candidate in Computer Science<br>Hong Kong Baptist University</p>
         <ul class="profile-links">
           <li><a href="https://github.com/peachch" target="_blank" rel="noopener">GitHub</a></li>
           <li><a href="https://scholar.google.com/citations?user=cz7Qel0AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
-          <!-- TODO: 添加邮箱，例如：
-               <li><a href="mailto:you@example.com">Email</a></li> -->
+          <li><a href="mailto:23483628@life.hkbu.edu.hk">Email</a></li>
         </ul>
       </div>
 
       <div class="intro">
         <h2>Biography</h2>
         <p>
-          Hi, I am <strong>Yuxi Sun</strong>
-          <!-- TODO: 确认身份表述，例如：a Ph.D. student at the Department of Computer Science,
-               Hong Kong Baptist University, advised by Prof. Jing Ma. -->
-          , an NLP researcher at Hong Kong Baptist University. My research focuses on making
-          large language models trustworthy — teaching them <em>when to answer and when to abstain</em>,
-          and evaluating their chain-of-thought reasoning through the lens of causality.
+          Hi, I am <strong>Yuxi Sun</strong>, a Ph.D. candidate in the Department of Computer Science at
+          Hong Kong Baptist University, advised by Prof. Jing Ma. My research focuses on building
+          <strong>trustworthy and controllable LLM agents</strong>, spanning intrinsic reasoning reliability,
+          retrieval-augmented grounding, and reliable evaluation. I am particularly interested in faithful
+          reasoning, uncertainty-aware abstention, hallucination mitigation, graph-based retrieval, and how
+          LLMs arbitrate between parametric knowledge and retrieved evidence.
         </p>
         <p>
-          My work has appeared at <strong>ACL</strong> and <strong>IJCNLP-AACL</strong>. Outside research, I believe in
-          "work and play".
+          Before my Ph.D., I worked as an NLP Algorithm Engineer at TCL &amp; Ping An and as a Research
+          Assistant at City University of Hong Kong. My work has appeared at <strong>ACL</strong>,
+          <strong>IJCNLP-AACL</strong>, and <strong>ICLR</strong>.
         </p>
       </div>
     </div>
@@ -66,10 +64,12 @@
     <section id="news">
       <h2>News</h2>
       <ul class="news-list">
-        <li><span class="date">2026.07</span> FACT-E is accepted to <strong>Findings of ACL 2026</strong> 🎉</li>
-        <li><span class="date">2025.07</span> CausalAbstain is accepted to <strong>Findings of ACL 2025</strong> 🎉</li>
-        <li><span class="date">2025.01</span> ClarityEthic is accepted to <strong>IJCNLP-AACL 2025</strong> 🎉</li>
-        <!-- TODO: 添加更多新闻（入学、实习、审稿、获奖等），复制一行修改即可 -->
+        <li><span class="date">2026.07</span> FACT-E appears in <strong>Findings of ACL 2026</strong> 🎉</li>
+        <li><span class="date">2026.06</span> PAVE is released on arXiv for diagnosing LLM arbitration under prior-context discrepancy.</li>
+        <li><span class="date">2026.02</span> HOMER is accepted to <strong>ICLR 2026</strong> 🎉</li>
+        <li><span class="date">2025.12</span> Our work on explainable ethical assessment appears at <strong>IJCNLP-AACL 2025</strong> 🎉</li>
+        <li><span class="date">2025.07</span> CausalAbstain appears in <strong>Findings of ACL 2025</strong> 🎉</li>
+        <li><span class="date">2023.09</span> Started my Ph.D. in Computer Science at Hong Kong Baptist University.</li>
       </ul>
     </section>
 
@@ -77,10 +77,9 @@
     <section id="research">
       <h2>Research Interests</h2>
       <ul class="interests">
-        <li><strong>Trustworthy LLMs</strong>: abstention &amp; reliability of large language models</li>
-        <li><strong>Causal reasoning for NLP</strong>: causality-inspired evaluation of chain-of-thought reasoning</li>
-        <li><strong>Explainable AI</strong>: explainable moral / ethical judgment of human behaviors</li>
-        <!-- TODO: 按实际方向增删 -->
+        <li><strong>Reliable Cognition</strong>: faithful reasoning trajectories, uncertainty-aware abstention, hallucination mitigation, and explainable norm-grounded judgment</li>
+        <li><strong>RAG &amp; Graph-based Retrieval</strong>: evidence-grounded reasoning over incomplete, scattered, and heterogeneous information through structured retrieval and alignment</li>
+        <li><strong>Dynamic Evaluation of Retrieved Information</strong>: diagnostic benchmarks and state-conditioned metrics for studying how LLMs arbitrate between parametric priors and retrieved context</li>
       </ul>
     </section>
 
@@ -95,8 +94,13 @@
         </div>
         <div class="project-card">
           <h3><a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">PAVE</a></h3>
-          <p class="tag">Python</p>
-          <p>Prior-Aware Verifier Evaluation.</p>
+          <p class="tag">arXiv 2026 · Under Review</p>
+          <p>Diagnosing how LLM verifiers arbitrate between parametric priors and retrieved evidence.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/Shang-hub/HOMER-Official-Implementation" target="_blank" rel="noopener">HOMER</a></h3>
+          <p class="tag">ICLR 2026</p>
+          <p>Humor-theory-driven multi-role LLM collaboration with retrieval-augmented hierarchical imagination.</p>
         </div>
         <div class="project-card">
           <h3><a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">CausalAbstain</a></h3>
@@ -105,8 +109,8 @@
         </div>
         <div class="project-card">
           <h3><a href="https://github.com/peachch/ClarityEthic" target="_blank" rel="noopener">ClarityEthic</a></h3>
-          <p class="tag">AACL 2025</p>
-          <p>Explainable ethical assessment on human behaviors by generating conflicting social norms.</p>
+          <p class="tag">IJCNLP-AACL 2025</p>
+          <p>Explainable ethical assessment of human behaviors through conflicting social norms.</p>
         </div>
       </div>
     </section>
@@ -121,14 +125,38 @@
           <p class="pub-meta">Findings of ACL 2026, pp. 20275–20293</p>
           <p class="pub-links">
             <a href="https://aclanthology.org/2026.findings-acl.1014/" target="_blank" rel="noopener">[Paper]</a>
+            <a href="https://arxiv.org/abs/2604.10693" target="_blank" rel="noopener">[arXiv]</a>
             <a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">[Code]</a>
-            <!-- TODO: 可加 arXiv / BibTeX 链接 -->
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic States in RAG-based Fact-Checking</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
+          <p class="pub-meta">Under Review, 2026</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2606.01120" target="_blank" rel="noopener">[arXiv]</a>
+            <a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">[Code]</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">Hierarchical Iterative Decomposition and Alignment for Evidence-Grounded Fact Verification</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
+          <p class="pub-meta">Under Review</p>
+        </li>
+        <li>
+          <p class="pub-title">On the Wings of Imagination: Conflicting Script-based Multi-role Framework for Humor Caption Generation</p>
+          <p class="pub-meta">Wenbo Shang, <strong>Yuxi Sun</strong>, Jing Ma, Xin Huang</p>
+          <p class="pub-meta">ICLR 2026</p>
+          <p class="pub-links">
+            <a href="https://openreview.net/forum?id=SzaRhPom4o" target="_blank" rel="noopener">[Paper]</a>
+            <a href="https://arxiv.org/abs/2602.06423" target="_blank" rel="noopener">[arXiv]</a>
+            <a href="https://github.com/Shang-hub/HOMER-Official-Implementation" target="_blank" rel="noopener">[Code]</a>
           </p>
         </li>
         <li>
           <p class="pub-title">CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning for Trustworthy Abstention</p>
           <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Wei Gao, Jing Ma</p>
-          <p class="pub-meta">Findings of ACL 2025</p>
+          <p class="pub-meta">Findings of ACL 2025, pp. 14060–14076</p>
           <p class="pub-links">
             <a href="https://aclanthology.org/2025.findings-acl.723/" target="_blank" rel="noopener">[Paper]</a>
             <a href="https://arxiv.org/abs/2506.00519" target="_blank" rel="noopener">[arXiv]</a>
@@ -136,26 +164,25 @@
           </p>
         </li>
         <li>
-          <p class="pub-title">ClarityEthic: Explainable Ethical Assessment on Human Behaviors by Generating Conflicting Social Norms</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wei Gao, Jing Ma, Hongzhan Lin, Wenxuan Zhang</p>
-          <p class="pub-meta">IJCNLP-AACL 2025</p>
+          <p class="pub-title">Explainable Ethical Assessment on Human Behaviors by Generating Conflicting Social Norms</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wei Gao, Hongzhan Lin, Jing Ma, Wenxuan Zhang</p>
+          <p class="pub-meta">IJCNLP-AACL 2025, pp. 166–184</p>
           <p class="pub-links">
             <a href="https://aclanthology.org/2025.ijcnlp-long.11/" target="_blank" rel="noopener">[Paper]</a>
-            <a href="https://arxiv.org/abs/2412.12848" target="_blank" rel="noopener">[arXiv]</a>
+            <a href="https://arxiv.org/abs/2512.15793" target="_blank" rel="noopener">[arXiv]</a>
             <a href="https://github.com/peachch/ClarityEthic" target="_blank" rel="noopener">[Code]</a>
           </p>
         </li>
       </ol>
-      <!-- TODO: 更多论文可按上面格式添加，或补充谷歌学术链接 -->
     </section>
 
     <!-- ===== 联系方式 ===== -->
     <section id="contact">
       <h2>Contact</h2>
       <ul class="contact-list">
+        <li>Email: <a href="mailto:23483628@life.hkbu.edu.hk">23483628@life.hkbu.edu.hk</a></li>
         <li>GitHub: <a href="https://github.com/peachch" target="_blank" rel="noopener">github.com/peachch</a></li>
         <li>Google Scholar: <a href="https://scholar.google.com/citations?user=cz7Qel0AAAAJ" target="_blank" rel="noopener">Yuxi Sun</a></li>
-        <!-- TODO: 添加邮箱 / Twitter / 等联系方式 -->
       </ul>
     </section>
 
