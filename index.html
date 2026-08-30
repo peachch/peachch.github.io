@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuxi Sun - Home</title>
-  <meta name="description" content="Personal homepage of Yuxi Sun (孙雨溪) — researcher working on trustworthy and controllable LLM agents, reliable reasoning, RAG, and evaluation.">
+  <meta name="description" content="Personal homepage of Yuxi Sun — researcher working on trustworthy and controllable LLM agents, reliable reasoning, fact-checking, RAG, causal LLMs, and multi-agent systems.">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/avatar.jpg">
 </head>
@@ -30,7 +30,7 @@
     <div class="container hero-grid">
       <div class="profile-card">
         <img class="avatar" src="assets/avatar.jpg" alt="avatar">
-        <h1>Yuxi Sun <span class="en-name">(孙雨溪)</span></h1>
+        <h1>Yuxi Sun</h1>
         <p class="affiliation">Ph.D. Candidate in Computer Science<br>Hong Kong Baptist University</p>
         <ul class="profile-links">
           <li><a href="https://github.com/peachch" target="_blank" rel="noopener">GitHub</a></li>
@@ -43,15 +43,18 @@
         <h2>Biography</h2>
         <p>
           Hi, I am <strong>Yuxi Sun</strong>, a Ph.D. candidate in the Department of Computer Science at
-          Hong Kong Baptist University, advised by Prof. Jing Ma. My research focuses on building
-          <strong>trustworthy and controllable LLM agents</strong>, spanning intrinsic reasoning reliability,
-          retrieval-augmented grounding, and reliable evaluation. I am particularly interested in faithful
-          reasoning, uncertainty-aware abstention, hallucination mitigation, graph-based retrieval, and how
-          LLMs arbitrate between parametric knowledge and retrieved evidence.
+          Hong Kong Baptist University, advised by Prof. Jing Ma. I received my M.Sc. in Information
+          Technology from City University of Hong Kong, advised by Prof. Rosa Chan, and my B.Eng. in
+          Automation from Central South University.
         </p>
         <p>
-          Before my Ph.D., I worked as an NLP Algorithm Engineer at TCL &amp; Ping An and as a Research
-          Assistant at City University of Hong Kong. My work has appeared at <strong>ACL</strong>,
+          My research focuses on building <strong>trustworthy and controllable LLM agents</strong>. I am
+          broadly interested in reliable reasoning, fact-checking, retrieval-augmented generation,
+          graph-based retrieval, causal LLMs, multi-agent systems, uncertainty-aware abstention,
+          hallucination mitigation, and reliable evaluation.
+        </p>
+        <p>
+          My work has appeared at <strong>ACL</strong>, <strong>EMNLP</strong>,
           <strong>IJCNLP-AACL</strong>, and <strong>ICLR</strong>.
         </p>
       </div>
@@ -64,11 +67,12 @@
     <section id="news">
       <h2>News</h2>
       <ul class="news-list">
-        <li><span class="date">2026.07</span> FACT-E appears in <strong>Findings of ACL 2026</strong> 🎉</li>
-        <li><span class="date">2026.06</span> PAVE is released on arXiv for diagnosing LLM arbitration under prior-context discrepancy.</li>
+        <li><span class="date">2026.08</span> Selected for the <strong>Xiaomi Top Talent Program</strong> internship 🎉</li>
+        <li><span class="date">2026.08</span> PAVE is accepted to <strong>EMNLP 2026</strong> 🎉</li>
+        <li><span class="date">2026.07</span> FACT-E is accepted to <strong>ACL 2026</strong> 🎉</li>
         <li><span class="date">2026.02</span> HOMER is accepted to <strong>ICLR 2026</strong> 🎉</li>
         <li><span class="date">2025.12</span> Our work on explainable ethical assessment appears at <strong>IJCNLP-AACL 2025</strong> 🎉</li>
-        <li><span class="date">2025.07</span> CausalAbstain appears in <strong>Findings of ACL 2025</strong> 🎉</li>
+        <li><span class="date">2025.07</span> CausalAbstain is accepted to <strong>ACL 2025</strong> 🎉</li>
         <li><span class="date">2023.09</span> Started my Ph.D. in Computer Science at Hong Kong Baptist University.</li>
       </ul>
     </section>
@@ -77,9 +81,10 @@
     <section id="research">
       <h2>Research Interests</h2>
       <ul class="interests">
-        <li><strong>Reliable Cognition</strong>: faithful reasoning trajectories, uncertainty-aware abstention, hallucination mitigation, and explainable norm-grounded judgment</li>
-        <li><strong>RAG &amp; Graph-based Retrieval</strong>: evidence-grounded reasoning over incomplete, scattered, and heterogeneous information through structured retrieval and alignment</li>
-        <li><strong>Dynamic Evaluation of Retrieved Information</strong>: diagnostic benchmarks and state-conditioned metrics for studying how LLMs arbitrate between parametric priors and retrieved context</li>
+        <li><strong>Trustworthy LLMs</strong>: reliable reasoning, uncertainty-aware abstention, hallucination mitigation, and trustworthy evaluation</li>
+        <li><strong>Fact-Checking &amp; RAG</strong>: evidence-grounded fact verification, retrieval-augmented generation, and graph-based retrieval</li>
+        <li><strong>Causal LLMs</strong>: causality-inspired methods for understanding, evaluating, and improving LLM reasoning</li>
+        <li><strong>Multi-Agent Systems</strong>: collaborative LLM agents for complex reasoning, retrieval, and verification tasks</li>
       </ul>
     </section>
 
@@ -94,8 +99,8 @@
         </div>
         <div class="project-card">
           <h3><a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">PAVE</a></h3>
-          <p class="tag">arXiv 2026 · Under Review</p>
-          <p>Diagnosing how LLM verifiers arbitrate between parametric priors and retrieved evidence.</p>
+          <p class="tag">EMNLP 2026</p>
+          <p>Prior-aware evaluation for reliable RAG-based fact-checking.</p>
         </div>
         <div class="project-card">
           <h3><a href="https://github.com/Shang-hub/HOMER-Official-Implementation" target="_blank" rel="noopener">HOMER</a></h3>
@@ -132,7 +137,7 @@
         <li>
           <p class="pub-title">Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic States in RAG-based Fact-Checking</p>
           <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
-          <p class="pub-meta">Under Review, 2026</p>
+          <p class="pub-meta">EMNLP 2026</p>
           <p class="pub-links">
             <a href="https://arxiv.org/abs/2606.01120" target="_blank" rel="noopener">[arXiv]</a>
             <a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">[Code]</a>
