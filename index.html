@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Yuxi Sun - Home</title>
   <meta name="description" content="Personal homepage of Yuxi Sun — researcher working on trustworthy and controllable LLM agents, reliable reasoning, fact-checking, RAG, causal LLMs, and multi-agent systems.">
   <link rel="stylesheet" href="style.css">
@@ -18,7 +21,7 @@
         <li><a href="#top">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#featured">Research</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -88,90 +91,159 @@
       </ul>
     </section>
 
-    <!-- ===== 项目 ===== -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3><a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">FACT-E</a></h3>
-          <p class="tag">ACL 2026 Findings</p>
-          <p>Causality-inspired evaluation for trustworthy chain-of-thought reasoning.</p>
+
+    <!-- ===== Selected Research ===== -->
+    <section id="featured">
+      <h2>Selected Research</h2>
+
+      <div class="featured-paper">
+        <div class="featured-image">
+          <img src="assets/papers/pave.png" alt="PAVE overview figure"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="featured-placeholder">PAVE overview figure</div>
         </div>
-        <div class="project-card">
-          <h3><a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">PAVE</a></h3>
-          <p class="tag">EMNLP 2026</p>
-          <p>Prior-aware evaluation for reliable RAG-based fact-checking.</p>
+        <div class="featured-content">
+          <div class="featured-topline">
+            <span class="featured-venue">EMNLP 2026</span>
+          </div>
+          <h3>Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic States in RAG-based Fact-Checking</h3>
+          <p class="featured-authors"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
+          <p class="featured-desc">
+            PAVE studies the reliability of LLM-based fact-checking under prior-context discrepancy
+            and provides a controlled diagnostic framework for evaluating evidence utilization across
+            different epistemic states.
+          </p>
+          <p class="featured-links">
+            <a href="https://arxiv.org/abs/2606.01120" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">Code</a>
+          </p>
         </div>
-        <div class="project-card">
-          <h3><a href="https://github.com/Shang-hub/HOMER-Official-Implementation" target="_blank" rel="noopener">HOMER</a></h3>
-          <p class="tag">ICLR 2026</p>
-          <p>Humor-theory-driven multi-role LLM collaboration with retrieval-augmented hierarchical imagination.</p>
+      </div>
+
+      <div class="featured-paper">
+        <div class="featured-image">
+          <img src="assets/papers/fact-e.png" alt="FACT-E overview figure"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="featured-placeholder">FACT-E overview figure</div>
         </div>
-        <div class="project-card">
-          <h3><a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">CausalAbstain</a></h3>
-          <p class="tag">ACL 2025 Findings</p>
-          <p>Enhancing multilingual LLMs with causal reasoning for trustworthy abstention.</p>
+        <div class="featured-content">
+          <div class="featured-topline">
+            <span class="featured-venue">ACL 2026</span>
+          </div>
+          <h3>FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning</h3>
+          <p class="featured-authors"><strong>Yuxi Sun</strong>, Aoqi Zuo, Haotian Xie, Wei Gao, Mingming Gong, Jing Ma</p>
+          <p class="featured-desc">
+            FACT-E evaluates the faithfulness of chain-of-thought reasoning through controlled
+            perturbations and causality-inspired dependence estimation, identifying reasoning chains
+            that appear plausible but contain unreliable intermediate steps.
+          </p>
+          <p class="featured-links">
+            <a href="https://aclanthology.org/2026.findings-acl.1014/" target="_blank" rel="noopener">Paper</a>
+            <a href="https://arxiv.org/abs/2604.10693" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">Code</a>
+          </p>
         </div>
-        <div class="project-card">
-          <h3><a href="https://github.com/peachch/ClarityEthic" target="_blank" rel="noopener">ClarityEthic</a></h3>
-          <p class="tag">IJCNLP-AACL 2025</p>
-          <p>Explainable ethical assessment of human behaviors through conflicting social norms.</p>
+      </div>
+
+      <div class="featured-paper">
+        <div class="featured-image">
+          <img src="assets/papers/hida.png" alt="HIDA overview figure"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="featured-placeholder">HIDA overview figure</div>
+        </div>
+        <div class="featured-content">
+          <div class="featured-topline">
+            <span class="featured-venue">Under Review</span>
+          </div>
+          <h3>Hierarchical Iterative Decomposition and Alignment for Evidence-Grounded Fact Verification</h3>
+          <p class="featured-authors"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
+          <p class="featured-desc">
+            HIDA targets complex evidence-grounded fact verification with hierarchical claim and
+            evidence structures, combining decomposition, cross-layer alignment, and iterative
+            refinement for more reliable grounding.
+          </p>
+        </div>
+      </div>
+
+      <div class="featured-paper">
+        <div class="featured-image">
+          <img src="assets/papers/causal-abstain.png" alt="CausalAbstain overview figure"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="featured-placeholder">CausalAbstain overview figure</div>
+        </div>
+        <div class="featured-content">
+          <div class="featured-topline">
+            <span class="featured-venue">ACL 2025</span>
+          </div>
+          <h3>CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning for Trustworthy Abstention</h3>
+          <p class="featured-authors"><strong>Yuxi Sun</strong>, Aoqi Zuo, Wei Gao, Jing Ma</p>
+          <p class="featured-desc">
+            CausalAbstain improves trustworthy abstention in multilingual LLMs by modeling feedback
+            selection from a causal perspective, helping models recognize knowledge boundaries and
+            avoid unreliable answers.
+          </p>
+          <p class="featured-links">
+            <a href="https://aclanthology.org/2025.findings-acl.723/" target="_blank" rel="noopener">Paper</a>
+            <a href="https://arxiv.org/abs/2506.00519" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">Code</a>
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ===== 论文 ===== -->
+
+
+    <!-- ===== Publications ===== -->
     <section id="publications">
       <h2>Publications</h2>
       <ol class="pub-list">
         <li>
           <p class="pub-title">FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Haotian Xie, Wei Gao, Mingming Gong, Jing Ma</p>
-          <p class="pub-meta">Findings of ACL 2026, pp. 20275–20293</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Haotian Xie, Wei Gao, Mingming Gong, Jing Ma · <em>ACL 2026</em></p>
           <p class="pub-links">
             <a href="https://aclanthology.org/2026.findings-acl.1014/" target="_blank" rel="noopener">[Paper]</a>
             <a href="https://arxiv.org/abs/2604.10693" target="_blank" rel="noopener">[arXiv]</a>
             <a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">[Code]</a>
           </p>
         </li>
+
         <li>
           <p class="pub-title">Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic States in RAG-based Fact-Checking</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
-          <p class="pub-meta">EMNLP 2026</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma · <em>EMNLP 2026</em></p>
           <p class="pub-links">
             <a href="https://arxiv.org/abs/2606.01120" target="_blank" rel="noopener">[arXiv]</a>
             <a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">[Code]</a>
           </p>
         </li>
+
         <li>
           <p class="pub-title">Hierarchical Iterative Decomposition and Alignment for Evidence-Grounded Fact Verification</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
-          <p class="pub-meta">Under Review</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma · <em>Under Review</em></p>
         </li>
+
         <li>
           <p class="pub-title">On the Wings of Imagination: Conflicting Script-based Multi-role Framework for Humor Caption Generation</p>
-          <p class="pub-meta">Wenbo Shang, <strong>Yuxi Sun</strong>, Jing Ma, Xin Huang</p>
-          <p class="pub-meta">ICLR 2026</p>
+          <p class="pub-meta">Wenbo Shang, <strong>Yuxi Sun</strong>, Jing Ma, Xin Huang · <em>ICLR 2026</em></p>
           <p class="pub-links">
             <a href="https://openreview.net/forum?id=SzaRhPom4o" target="_blank" rel="noopener">[Paper]</a>
             <a href="https://arxiv.org/abs/2602.06423" target="_blank" rel="noopener">[arXiv]</a>
             <a href="https://github.com/Shang-hub/HOMER-Official-Implementation" target="_blank" rel="noopener">[Code]</a>
           </p>
         </li>
+
         <li>
           <p class="pub-title">CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning for Trustworthy Abstention</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Wei Gao, Jing Ma</p>
-          <p class="pub-meta">Findings of ACL 2025, pp. 14060–14076</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Wei Gao, Jing Ma · <em>ACL 2025</em></p>
           <p class="pub-links">
             <a href="https://aclanthology.org/2025.findings-acl.723/" target="_blank" rel="noopener">[Paper]</a>
             <a href="https://arxiv.org/abs/2506.00519" target="_blank" rel="noopener">[arXiv]</a>
             <a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">[Code]</a>
           </p>
         </li>
+
         <li>
           <p class="pub-title">Explainable Ethical Assessment on Human Behaviors by Generating Conflicting Social Norms</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wei Gao, Hongzhan Lin, Jing Ma, Wenxuan Zhang</p>
-          <p class="pub-meta">IJCNLP-AACL 2025, pp. 166–184</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wei Gao, Hongzhan Lin, Jing Ma, Wenxuan Zhang · <em>IJCNLP-AACL 2025</em></p>
           <p class="pub-links">
             <a href="https://aclanthology.org/2025.ijcnlp-long.11/" target="_blank" rel="noopener">[Paper]</a>
             <a href="https://arxiv.org/abs/2512.15793" target="_blank" rel="noopener">[arXiv]</a>
@@ -180,6 +252,7 @@
         </li>
       </ol>
     </section>
+
 
     <!-- ===== 联系方式 ===== -->
     <section id="contact">
