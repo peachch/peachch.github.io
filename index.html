@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuxi Sun - Home</title>
+  <meta name="description" content="Personal homepage of Yuxi Sun (孙雨溪) — NLP researcher working on trustworthy LLMs and causal reasoning.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/avatar.jpg">
+</head>
+<body>
+
+  <!-- ===== 顶部导航 ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="#top">Yuxi Sun</a>
+      <ul class="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== 个人简介 ===== -->
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="profile-card">
+        <img class="avatar" src="assets/avatar.jpg" alt="avatar">
+        <h1>Yuxi Sun <span class="en-name">(孙雨溪)</span></h1>
+        <!-- TODO: 确认你的职位信息，例如：
+             <p class="affiliation">Ph.D. Student in Computer Science<br>Hong Kong Baptist University</p> -->
+        <p class="affiliation">Ph.D. Student<br>Hong Kong Baptist University 🇭🇰</p>
+        <ul class="profile-links">
+          <li><a href="https://github.com/peachch" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=cz7Qel0AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          <!-- TODO: 添加邮箱，例如：
+               <li><a href="mailto:you@example.com">Email</a></li> -->
+        </ul>
+      </div>
+
+      <div class="intro">
+        <h2>Biography</h2>
+        <p>
+          Hi, I am <strong>Yuxi Sun</strong>
+          <!-- TODO: 确认身份表述，例如：a Ph.D. student at the Department of Computer Science,
+               Hong Kong Baptist University, advised by Prof. Jing Ma. -->
+          , an NLP researcher at Hong Kong Baptist University. My research focuses on making
+          large language models trustworthy — teaching them <em>when to answer and when to abstain</em>,
+          and evaluating their chain-of-thought reasoning through the lens of causality.
+        </p>
+        <p>
+          My work has appeared at <strong>ACL</strong> and <strong>IJCNLP-AACL</strong>. Outside research, I believe in
+          "work and play".
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== 新闻 ===== -->
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><span class="date">2026.07</span> FACT-E is accepted to <strong>Findings of ACL 2026</strong> 🎉</li>
+        <li><span class="date">2025.07</span> CausalAbstain is accepted to <strong>Findings of ACL 2025</strong> 🎉</li>
+        <li><span class="date">2025.01</span> ClarityEthic is accepted to <strong>IJCNLP-AACL 2025</strong> 🎉</li>
+        <!-- TODO: 添加更多新闻（入学、实习、审稿、获奖等），复制一行修改即可 -->
+      </ul>
+    </section>
+
+    <!-- ===== 研究方向 ===== -->
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul class="interests">
+        <li><strong>Trustworthy LLMs</strong>: abstention &amp; reliability of large language models</li>
+        <li><strong>Causal reasoning for NLP</strong>: causality-inspired evaluation of chain-of-thought reasoning</li>
+        <li><strong>Explainable AI</strong>: explainable moral / ethical judgment of human behaviors</li>
+        <!-- TODO: 按实际方向增删 -->
+      </ul>
+    </section>
+
+    <!-- ===== 项目 ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3><a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">FACT-E</a></h3>
+          <p class="tag">ACL 2026 Findings</p>
+          <p>Causality-inspired evaluation for trustworthy chain-of-thought reasoning.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">PAVE</a></h3>
+          <p class="tag">Python</p>
+          <p>Prior-Aware Verifier Evaluation.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">CausalAbstain</a></h3>
+          <p class="tag">ACL 2025 Findings</p>
+          <p>Enhancing multilingual LLMs with causal reasoning for trustworthy abstention.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/peachch/ClarityEthic" target="_blank" rel="noopener">ClarityEthic</a></h3>
+          <p class="tag">AACL 2025</p>
+          <p>Explainable ethical assessment on human behaviors by generating conflicting social norms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 论文 ===== -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="pub-note">(* denotes equal contribution. <!-- TODO: 如有共同一作请调整 -->)</p>
+      <ol class="pub-list">
+        <li>
+          <p class="pub-title">FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Haotian Xie, Wei Gao, Mingming Gong, Jing Ma</p>
+          <p class="pub-meta">Findings of ACL 2026, pp. 20275–20293</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2026.findings-acl.1014/" target="_blank" rel="noopener">[Paper]</a>
+            <a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">[Code]</a>
+            <!-- TODO: 可加 arXiv / BibTeX 链接 -->
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning for Trustworthy Abstention</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Wei Gao, Jing Ma</p>
+          <p class="pub-meta">Findings of ACL 2025</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2025.findings-acl.723/" target="_blank" rel="noopener">[Paper]</a>
+            <a href="https://arxiv.org/abs/2506.00519" target="_blank" rel="noopener">[arXiv]</a>
+            <a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">[Code]</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">ClarityEthic: Explainable Ethical Assessment on Human Behaviors by Generating Conflicting Social Norms</p>
+          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wei Gao, Jing Ma, Hongzhan Lin, Wenxuan Zhang</p>
+          <p class="pub-meta">IJCNLP-AACL 2025</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2025.ijcnlp-long.11/" target="_blank" rel="noopener">[Paper]</a>
+            <a href="https://arxiv.org/abs/2412.12848" target="_blank" rel="noopener">[arXiv]</a>
+            <a href="https://github.com/peachch/ClarityEthic" target="_blank" rel="noopener">[Code]</a>
+          </p>
+        </li>
+      </ol>
+      <!-- TODO: 更多论文可按上面格式添加，或补充谷歌学术链接 -->
+    </section>
+
+    <!-- ===== 联系方式 ===== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>GitHub: <a href="https://github.com/peachch" target="_blank" rel="noopener">github.com/peachch</a></li>
+        <li>Google Scholar: <a href="https://scholar.google.com/citations?user=cz7Qel0AAAAJ" target="_blank" rel="noopener">Yuxi Sun</a></li>
+        <!-- TODO: 添加邮箱 / Twitter / 等联系方式 -->
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Yuxi Sun · Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
