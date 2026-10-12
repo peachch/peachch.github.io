@@ -3,20 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <title>Yuxi Sun - Home</title>
-  <meta name="description" content="Personal homepage of Yuxi Sun — researcher working on trustworthy and controllable LLM agents, reliable reasoning, fact-checking, RAG, causal LLMs, and multi-agent systems.">
+
+  <meta
+    name="description"
+    content="Personal homepage of Yuxi Sun — researcher working on trustworthy and controllable LLM agents, reliable reasoning, fact-checking, RAG, causal LLMs, and multi-agent systems."
+  >
+
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/avatar.jpg">
+
+  <!-- News timeline -->
+  <style>
+    .timeline {
+      position: relative;
+      margin-top: 1.4rem;
+    }
+
+    .timeline-year {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #222;
+      margin: 1.6rem 0 0.8rem 0;
+    }
+
+    .timeline-year:first-child {
+      margin-top: 0;
+    }
+
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 24px 46px 1fr;
+      gap: 0.6rem;
+      padding-bottom: 1.15rem;
+      align-items: start;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 13px;
+      bottom: -2px;
+      width: 1px;
+      background: #dedede;
+    }
+
+    .timeline-marker {
+      width: 9px;
+      height: 9px;
+      border: 2px solid #777;
+      border-radius: 50%;
+      background: #fff;
+      margin-top: 5px;
+      position: relative;
+      z-index: 1;
+      box-sizing: border-box;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #777;
+      padding-top: 1px;
+    }
+
+    .timeline-content {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: #333;
+    }
+
+    .timeline-content a {
+      font-weight: 500;
+    }
+
+    .timeline-item:last-child::before {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .timeline-item {
+        grid-template-columns: 20px 40px 1fr;
+        gap: 0.4rem;
+      }
+
+      .timeline-content {
+        font-size: 0.92rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- ===== 顶部导航 ===== -->
   <nav class="navbar">
     <div class="container">
       <a class="brand" href="#top">Yuxi Sun</a>
+
       <ul class="nav-links">
         <li><a href="#top">Home</a></li>
         <li><a href="#news">News</a></li>
@@ -29,74 +123,242 @@
     </div>
   </nav>
 
+
   <!-- ===== 个人简介 ===== -->
   <header class="hero" id="top">
     <div class="container hero-grid">
+
       <div class="profile-card">
-        <img class="avatar" src="assets/avatar.jpg" alt="avatar">
+        <img
+          class="avatar"
+          src="assets/avatar.jpg"
+          alt="avatar"
+        >
+
         <h1>Yuxi Sun</h1>
-        <p class="affiliation">Ph.D. Candidate in Computer Science<br>Hong Kong Baptist University</p>
+
+        <p class="affiliation">
+          Ph.D. Candidate in Computer Science<br>
+          Hong Kong Baptist University
+        </p>
+
         <ul class="profile-links">
-          <li><a href="https://github.com/peachch" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://scholar.google.com/citations?user=bPDQJ-cAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
-          <li><a href="mailto:23483628@life.hkbu.edu.hk">Email</a></li>
+          <li>
+            <a
+              href="https://github.com/peachch"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://scholar.google.com/citations?user=bPDQJ-cAAAAJ&hl=en&authuser=1"
+              target="_blank"
+              rel="noopener"
+            >
+              Google Scholar
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:23483628@life.hkbu.edu.hk">
+              Email
+            </a>
+          </li>
         </ul>
       </div>
 
+
       <div class="intro">
         <h2>Biography</h2>
+
         <p>
-          Hi, I am <strong>Yuxi Sun</strong> 👋, a Ph.D. candidate in the Department of Computer Science at
-          Hong Kong Baptist University, advised by <a href="https://scholar.google.com/citations?user=78Jby0EAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Prof. Jing Ma</a>. I received my M.Sc. in Information
-          Technology from City University of Hong Kong, advised by <a href="https://scholar.google.com/citations?user=n71R2h8AAAAJ&hl=en" target="_blank" rel="noopener">Prof. Rosa Chan</a>, and my B.Eng. in
-          Automation from Central South University.
+          Hi, I am <strong>Yuxi Sun</strong> 👋, a Ph.D. candidate in the
+          Department of Computer Science at Hong Kong Baptist University,
+          advised by
+          <a
+            href="https://scholar.google.com/citations?user=78Jby0EAAAAJ&hl=en&authuser=1"
+            target="_blank"
+            rel="noopener"
+          >
+            Prof. Jing Ma
+          </a>.
+          I received my M.Sc. in Information Technology from City University
+          of Hong Kong, advised by
+          <a
+            href="https://scholar.google.com/citations?user=n71R2h8AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener"
+          >
+            Prof. Rosa Chan
+          </a>,
+          and my B.Eng. in Automation from Central South University.
         </p>
+
         <p>
-          My research focuses on building <strong>trustworthy and controllable LLM agents</strong>. I am
-          broadly interested in reliable reasoning, fact-checking, retrieval-augmented generation,
-          graph-based retrieval, causal LLMs, multi-agent systems, uncertainty-aware abstention,
+          My research focuses on building
+          <strong>trustworthy and controllable LLM agents</strong>.
+          I am broadly interested in reliable reasoning, fact-checking,
+          retrieval-augmented generation, graph-based retrieval, causal LLMs,
+          multi-agent systems, uncertainty-aware abstention,
           hallucination mitigation, and reliable evaluation.
         </p>
       </div>
+
     </div>
   </header>
 
+
   <main class="container">
 
-    <!-- ===== 新闻 ===== -->
+    <!-- ===== News ===== -->
     <section id="news">
       <h2>News</h2>
-      <ul class="news-list">
-        
-       <ul class="news-list">
 
-  <li><span class="date">2026.09</span> The <strong>Xiaomi-TabLDM</strong> technical report is now available on <a href="https://arxiv.org/abs/2609.03880" target="_blank" rel="noopener">arXiv</a> 🚀. Xiaomi-TabLDM extends the foundation-model paradigm to tabular data through large-scale synthetic pretraining and in-context learning.</li>
+      <div class="timeline">
 
-<li><span class="date">2026.08</span> PAVE is accepted to <strong>EMNLP 2026</strong> 🎉. PAVE studies how LLM verifiers arbitrate between internal priors and retrieved evidence under conflict in RAG-based fact-checking.</li>
+        <!-- 2026 -->
+        <div class="timeline-year">2026</div>
 
-<li><span class="date">2026.07</span> Joined Xiaomi through the <strong>Top Talent Program</strong> as an algorithm research intern 🌟. I am working on tabular foundation models, with a focus on synthetic pretraining and scalable data priors.</li>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
 
-<li><span class="date">2026.07</span> FACT-E is accepted to <strong>ACL 2026</strong> 🎉. FACT-E evaluates chain-of-thought faithfulness through causality-inspired perturbations and dependency estimation.</li>
+          <div class="timeline-date">Sep</div>
 
-<li><span class="date">2026.02</span> HOMER is accepted to <strong>ICLR 2026</strong> 🎉. HOMER introduces a multi-role LLM framework for humor generation with conflicting-script reasoning and retrieval-augmented imagination.</li>
+          <div class="timeline-content">
+            The <strong>Xiaomi-TabLDM</strong> technical report is now available on
+            <a
+              href="https://arxiv.org/abs/2609.03880"
+              target="_blank"
+              rel="noopener"
+            >
+              arXiv
+            </a>
+            and
+            <a
+              href="https://github.com/xiaomi-research/xiaomi-tabldm"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
+            🚀. Xiaomi-TabLDM extends the foundation-model paradigm to tabular
+            data through large-scale synthetic pretraining and in-context learning.
+          </div>
+        </div>
 
-<li><span class="date">2025.12</span> Our work on explainable ethical assessment appears at <strong>IJCNLP-AACL 2025</strong> 🎉. The work improves explainable ethical judgment by reasoning over conflicting social norms behind human behaviors.</li>
 
-<li><span class="date">2025.07</span> CausalAbstain is accepted to <strong>ACL 2025</strong> 🎉. CausalAbstain uses causal reasoning to help multilingual LLMs recognize knowledge boundaries and make more reliable abstention decisions.</li>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
 
-</ul>
-       
-      
-      </ul>
+          <div class="timeline-date">Aug</div>
+
+          <div class="timeline-content">
+            PAVE is accepted to <strong>EMNLP 2026</strong> 🎉.
+            PAVE studies how LLM verifiers arbitrate between internal priors
+            and retrieved evidence under conflict in RAG-based fact-checking.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+
+          <div class="timeline-date">Jul</div>
+
+          <div class="timeline-content">
+            Joined Xiaomi through the <strong>Top Talent Program</strong> as an
+            algorithm research intern 🌟. I am working on tabular foundation
+            models, with a focus on synthetic pretraining and scalable data priors.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+
+          <div class="timeline-date">Jul</div>
+
+          <div class="timeline-content">
+            FACT-E is accepted to <strong>ACL 2026</strong> 🎉.
+            FACT-E evaluates chain-of-thought faithfulness through
+            causality-inspired perturbations and dependency estimation.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+
+          <div class="timeline-date">Feb</div>
+
+          <div class="timeline-content">
+            HOMER is accepted to <strong>ICLR 2026</strong> 🎉.
+            HOMER introduces a multi-role LLM framework for humor generation
+            with conflicting-script reasoning and retrieval-augmented imagination.
+          </div>
+        </div>
+
+
+        <!-- 2025 -->
+        <div class="timeline-year">2025</div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+
+          <div class="timeline-date">Dec</div>
+
+          <div class="timeline-content">
+            Our work on explainable ethical assessment appears at
+            <strong>IJCNLP-AACL 2025</strong> 🎉.
+            The work improves explainable ethical judgment by reasoning over
+            conflicting social norms behind human behaviors.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+
+          <div class="timeline-date">Jul</div>
+
+          <div class="timeline-content">
+            CausalAbstain is accepted to <strong>ACL 2025</strong> 🎉.
+            CausalAbstain uses causal reasoning to help multilingual LLMs
+            recognize knowledge boundaries and make more reliable abstention
+            decisions.
+          </div>
+        </div>
+
+      </div>
     </section>
+
 
     <!-- ===== 研究方向 ===== -->
     <section id="research">
       <h2>Research Interests</h2>
+
       <ul class="interests">
-        <li><strong>Trustworthy &amp; Reliable LLMs</strong>: faithful reasoning, uncertainty-aware decision making, causal analysis, and reliability evaluation</li>
-        <li><strong>Evidence-Grounded Language Models</strong>: fact-checking, retrieval-augmented generation, and structured / graph-based retrieval</li>
-        <li><strong>LLM Agents &amp; Multi-Agent Systems</strong>: reliable agentic reasoning, collaboration, and coordination for complex tasks</li>
+        <li>
+          <strong>Trustworthy &amp; Reliable LLMs</strong>:
+          faithful reasoning, uncertainty-aware decision making,
+          causal analysis, and reliability evaluation
+        </li>
+
+        <li>
+          <strong>Evidence-Grounded Language Models</strong>:
+          fact-checking, retrieval-augmented generation,
+          and structured / graph-based retrieval
+        </li>
+
+        <li>
+          <strong>LLM Agents &amp; Multi-Agent Systems</strong>:
+          reliable agentic reasoning, collaboration,
+          and coordination for complex tasks
+        </li>
       </ul>
     </section>
 
@@ -105,185 +367,577 @@
     <section id="featured">
       <h2>Selected Research</h2>
 
+
+      <!-- PAVE -->
       <div class="featured-paper">
+
         <div class="featured-image">
-          <img src="assets/papers/pave.png" alt="PAVE overview figure"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="featured-placeholder">PAVE overview figure</div>
-        </div>
-        <div class="featured-content">
-          <div class="featured-topline">
-            <span class="featured-venue">EMNLP 2026</span>
+          <img
+            src="assets/papers/pave.png"
+            alt="PAVE overview figure"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="featured-placeholder">
+            PAVE overview figure
           </div>
-          <h3>Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic States in RAG-based Fact-Checking</h3>
-          <p class="featured-authors"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma</p>
+        </div>
+
+
+        <div class="featured-content">
+
+          <div class="featured-topline">
+            <span class="featured-venue">
+              EMNLP 2026
+            </span>
+          </div>
+
+          <h3>
+            Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic
+            States in RAG-based Fact-Checking
+          </h3>
+
+          <p class="featured-authors">
+            <strong>Yuxi Sun</strong>,
+            Wenbo Shang,
+            Wei Gao,
+            Xin Huang,
+            Jing Ma
+          </p>
+
           <p class="featured-desc">
-            PAVE studies the reliability of LLM-based fact-checking under prior-context discrepancy
-            and provides a controlled diagnostic framework for evaluating evidence utilization across
-            different epistemic states.
+            PAVE studies the reliability of LLM-based fact-checking under
+            prior-context discrepancy and provides a controlled diagnostic
+            framework for evaluating evidence utilization across different
+            epistemic states.
           </p>
+
           <p class="featured-links">
-            <a href="https://arxiv.org/abs/2606.01120" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">Code</a>
+            <a
+              href="https://arxiv.org/abs/2606.01120"
+              target="_blank"
+              rel="noopener"
+            >
+              arXiv
+            </a>
+
+            <a
+              href="https://github.com/peachch/PAVE"
+              target="_blank"
+              rel="noopener"
+            >
+              Code
+            </a>
           </p>
+
         </div>
       </div>
 
+
+      <!-- FACT-E -->
       <div class="featured-paper">
+
         <div class="featured-image">
-          <img src="assets/papers/fact-e.png" alt="FACT-E overview figure"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="featured-placeholder">FACT-E overview figure</div>
-        </div>
-        <div class="featured-content">
-          <div class="featured-topline">
-            <span class="featured-venue">ACL 2026</span>
+          <img
+            src="assets/papers/fact-e.png"
+            alt="FACT-E overview figure"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="featured-placeholder">
+            FACT-E overview figure
           </div>
-          <h3>FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning</h3>
-          <p class="featured-authors"><strong>Yuxi Sun</strong>, Aoqi Zuo, Haotian Xie, Wei Gao, Mingming Gong, Jing Ma</p>
+        </div>
+
+
+        <div class="featured-content">
+
+          <div class="featured-topline">
+            <span class="featured-venue">
+              ACL 2026
+            </span>
+          </div>
+
+          <h3>
+            FACT-E: Causality-Inspired Evaluation for Trustworthy
+            Chain-of-Thought Reasoning
+          </h3>
+
+          <p class="featured-authors">
+            <strong>Yuxi Sun</strong>,
+            Aoqi Zuo,
+            Haotian Xie,
+            Wei Gao,
+            Mingming Gong,
+            Jing Ma
+          </p>
+
           <p class="featured-desc">
-            FACT-E evaluates the faithfulness of chain-of-thought reasoning through controlled
-            perturbations and causality-inspired dependence estimation, identifying reasoning chains
-            that appear plausible but contain unreliable intermediate steps.
+            FACT-E evaluates the faithfulness of chain-of-thought reasoning
+            through controlled perturbations and causality-inspired dependence
+            estimation, identifying reasoning chains that appear plausible but
+            contain unreliable intermediate steps.
           </p>
+
           <p class="featured-links">
-            <a href="https://aclanthology.org/2026.findings-acl.1014/" target="_blank" rel="noopener">Paper</a>
-            <a href="https://arxiv.org/abs/2604.10693" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">Code</a>
+            <a
+              href="https://aclanthology.org/2026.findings-acl.1014/"
+              target="_blank"
+              rel="noopener"
+            >
+              Paper
+            </a>
+
+            <a
+              href="https://arxiv.org/abs/2604.10693"
+              target="_blank"
+              rel="noopener"
+            >
+              arXiv
+            </a>
+
+            <a
+              href="https://github.com/peachch/FACT-E"
+              target="_blank"
+              rel="noopener"
+            >
+              Code
+            </a>
           </p>
+
         </div>
       </div>
 
+
+      <!-- HOMER -->
       <div class="featured-paper">
+
         <div class="featured-image">
-          <img src="assets/papers/homer.png" alt="HOMER overview figure"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="featured-placeholder">HOMER overview figure</div>
-        </div>
-        <div class="featured-content">
-          <div class="featured-topline">
-            <span class="featured-venue">ICLR 2026</span>
+          <img
+            src="assets/papers/homer.png"
+            alt="HOMER overview figure"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="featured-placeholder">
+            HOMER overview figure
           </div>
-          <h3>On the Wings of Imagination: Conflicting Script-based Multi-role Framework for Humor Caption Generation</h3>
-          <p class="featured-authors">Wenbo Shang, <strong>Yuxi Sun</strong>, Jing Ma, Xin Huang</p>
+        </div>
+
+
+        <div class="featured-content">
+
+          <div class="featured-topline">
+            <span class="featured-venue">
+              ICLR 2026
+            </span>
+          </div>
+
+          <h3>
+            On the Wings of Imagination: Conflicting Script-based Multi-role
+            Framework for Humor Caption Generation
+          </h3>
+
+          <p class="featured-authors">
+            Wenbo Shang,
+            <strong>Yuxi Sun</strong>,
+            Jing Ma,
+            Xin Huang
+          </p>
+
           <p class="featured-desc">
-            HOMER is a multi-role LLM framework for humor caption generation that combines
-            conflicting-script reasoning, retrieval-augmented hierarchical imagination, and
-            collaborative generation.
+            HOMER is a multi-role LLM framework for humor caption generation
+            that combines conflicting-script reasoning, retrieval-augmented
+            hierarchical imagination, and collaborative generation.
           </p>
+
           <p class="featured-links">
-            <a href="https://openreview.net/forum?id=SzaRhPom4o" target="_blank" rel="noopener">Paper</a>
-            <a href="https://arxiv.org/abs/2602.06423" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://github.com/Shang-hub/HOMER-Official-Implementation" target="_blank" rel="noopener">Code</a>
+            <a
+              href="https://openreview.net/forum?id=SzaRhPom4o"
+              target="_blank"
+              rel="noopener"
+            >
+              Paper
+            </a>
+
+            <a
+              href="https://arxiv.org/abs/2602.06423"
+              target="_blank"
+              rel="noopener"
+            >
+              arXiv
+            </a>
+
+            <a
+              href="https://github.com/Shang-hub/HOMER-Official-Implementation"
+              target="_blank"
+              rel="noopener"
+            >
+              Code
+            </a>
           </p>
+
         </div>
       </div>
 
+
+      <!-- CausalAbstain -->
       <div class="featured-paper">
+
         <div class="featured-image">
-          <img src="assets/papers/causal-abstain.png" alt="CausalAbstain overview figure"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="featured-placeholder">CausalAbstain overview figure</div>
-        </div>
-        <div class="featured-content">
-          <div class="featured-topline">
-            <span class="featured-venue">ACL 2025</span>
+          <img
+            src="assets/papers/causal-abstain.png"
+            alt="CausalAbstain overview figure"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="featured-placeholder">
+            CausalAbstain overview figure
           </div>
-          <h3>CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning for Trustworthy Abstention</h3>
-          <p class="featured-authors"><strong>Yuxi Sun</strong>, Aoqi Zuo, Wei Gao, Jing Ma</p>
+        </div>
+
+
+        <div class="featured-content">
+
+          <div class="featured-topline">
+            <span class="featured-venue">
+              ACL 2025
+            </span>
+          </div>
+
+          <h3>
+            CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning
+            for Trustworthy Abstention
+          </h3>
+
+          <p class="featured-authors">
+            <strong>Yuxi Sun</strong>,
+            Aoqi Zuo,
+            Wei Gao,
+            Jing Ma
+          </p>
+
           <p class="featured-desc">
-            CausalAbstain improves trustworthy abstention in multilingual LLMs by modeling feedback
-            selection from a causal perspective, helping models recognize knowledge boundaries and
-            avoid unreliable answers.
+            CausalAbstain improves trustworthy abstention in multilingual LLMs
+            by modeling feedback selection from a causal perspective, helping
+            models recognize knowledge boundaries and avoid unreliable answers.
           </p>
+
           <p class="featured-links">
-            <a href="https://aclanthology.org/2025.findings-acl.723/" target="_blank" rel="noopener">Paper</a>
-            <a href="https://arxiv.org/abs/2506.00519" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">Code</a>
+            <a
+              href="https://aclanthology.org/2025.findings-acl.723/"
+              target="_blank"
+              rel="noopener"
+            >
+              Paper
+            </a>
+
+            <a
+              href="https://arxiv.org/abs/2506.00519"
+              target="_blank"
+              rel="noopener"
+            >
+              arXiv
+            </a>
+
+            <a
+              href="https://github.com/peachch/CausalAbstain"
+              target="_blank"
+              rel="noopener"
+            >
+              Code
+            </a>
           </p>
+
         </div>
       </div>
+
     </section>
-
 
 
     <!-- ===== Publications ===== -->
     <section id="publications">
       <h2>Publications</h2>
+
       <ol class="pub-list">
+
         <li>
-          <p class="pub-title">FACT-E: Causality-Inspired Evaluation for Trustworthy Chain-of-Thought Reasoning</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Haotian Xie, Wei Gao, Mingming Gong, Jing Ma · <em>ACL 2026</em>
+          <p class="pub-title">
+            FACT-E: Causality-Inspired Evaluation for Trustworthy
+            Chain-of-Thought Reasoning
+          </p>
+
+          <p class="pub-meta">
+            <strong>Yuxi Sun</strong>,
+            Aoqi Zuo,
+            Haotian Xie,
+            Wei Gao,
+            Mingming Gong,
+            Jing Ma ·
+            <em>ACL 2026</em>
+
             <span class="pub-links-inline">
-              <a href="https://aclanthology.org/2026.findings-acl.1014/" target="_blank" rel="noopener">[Paper]</a>
-              <a href="https://arxiv.org/abs/2604.10693" target="_blank" rel="noopener">[arXiv]</a>
-              <a href="https://github.com/peachch/FACT-E" target="_blank" rel="noopener">[Code]</a>
+              <a
+                href="https://aclanthology.org/2026.findings-acl.1014/"
+                target="_blank"
+                rel="noopener"
+              >
+                [Paper]
+              </a>
+
+              <a
+                href="https://arxiv.org/abs/2604.10693"
+                target="_blank"
+                rel="noopener"
+              >
+                [arXiv]
+              </a>
+
+              <a
+                href="https://github.com/peachch/FACT-E"
+                target="_blank"
+                rel="noopener"
+              >
+                [Code]
+              </a>
             </span>
           </p>
         </li>
 
+
         <li>
-          <p class="pub-title">Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic States in RAG-based Fact-Checking</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wenbo Shang, Wei Gao, Xin Huang, Jing Ma · <em>EMNLP 2026</em>
+          <p class="pub-title">
+            Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic
+            States in RAG-based Fact-Checking
+          </p>
+
+          <p class="pub-meta">
+            <strong>Yuxi Sun</strong>,
+            Wenbo Shang,
+            Wei Gao,
+            Xin Huang,
+            Jing Ma ·
+            <em>EMNLP 2026</em>
+
             <span class="pub-links-inline">
-              <a href="https://arxiv.org/abs/2606.01120" target="_blank" rel="noopener">[arXiv]</a>
-              <a href="https://github.com/peachch/PAVE" target="_blank" rel="noopener">[Code]</a>
+              <a
+                href="https://arxiv.org/abs/2606.01120"
+                target="_blank"
+                rel="noopener"
+              >
+                [arXiv]
+              </a>
+
+              <a
+                href="https://github.com/peachch/PAVE"
+                target="_blank"
+                rel="noopener"
+              >
+                [Code]
+              </a>
             </span>
           </p>
         </li>
 
+
         <li>
-          <p class="pub-title">REFLEX: Self-Refining Explainable Fact-Checking via Verdict-Anchored Style Control</p>
-          <p class="pub-meta">Chuyi Kong, Wei Gao, Jing Ma, Hongzhan Lin, <strong>Yuxi Sun</strong> · <em>ACL 2026</em>
+          <p class="pub-title">
+            REFLEX: Self-Refining Explainable Fact-Checking via
+            Verdict-Anchored Style Control
+          </p>
+
+          <p class="pub-meta">
+            Chuyi Kong,
+            Wei Gao,
+            Jing Ma,
+            Hongzhan Lin,
+            <strong>Yuxi Sun</strong> ·
+            <em>ACL 2026</em>
+
             <span class="pub-links-inline">
-              <a href="https://aclanthology.org/2026.acl-long.202/" target="_blank" rel="noopener">[Paper]</a>
-              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bPDQJ-cAAAAJ&authuser=1&citation_for_view=bPDQJ-cAAAAJ:W7OEmFMy1HYC" target="_blank" rel="noopener">[Scholar]</a>
+              <a
+                href="https://aclanthology.org/2026.acl-long.202/"
+                target="_blank"
+                rel="noopener"
+              >
+                [Paper]
+              </a>
+
+              <a
+                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bPDQJ-cAAAAJ&authuser=1&citation_for_view=bPDQJ-cAAAAJ:W7OEmFMy1HYC"
+                target="_blank"
+                rel="noopener"
+              >
+                [Scholar]
+              </a>
             </span>
           </p>
         </li>
 
+
         <li>
-          <p class="pub-title">On the Wings of Imagination: Conflicting Script-based Multi-role Framework for Humor Caption Generation</p>
-          <p class="pub-meta">Wenbo Shang, <strong>Yuxi Sun</strong>, Jing Ma, Xin Huang · <em>ICLR 2026</em>
+          <p class="pub-title">
+            On the Wings of Imagination: Conflicting Script-based Multi-role
+            Framework for Humor Caption Generation
+          </p>
+
+          <p class="pub-meta">
+            Wenbo Shang,
+            <strong>Yuxi Sun</strong>,
+            Jing Ma,
+            Xin Huang ·
+            <em>ICLR 2026</em>
+
             <span class="pub-links-inline">
-              <a href="https://openreview.net/forum?id=SzaRhPom4o" target="_blank" rel="noopener">[Paper]</a>
-              <a href="https://arxiv.org/abs/2602.06423" target="_blank" rel="noopener">[arXiv]</a>
-              <a href="https://github.com/Shang-hub/HOMER-Official-Implementation" target="_blank" rel="noopener">[Code]</a>
+              <a
+                href="https://openreview.net/forum?id=SzaRhPom4o"
+                target="_blank"
+                rel="noopener"
+              >
+                [Paper]
+              </a>
+
+              <a
+                href="https://arxiv.org/abs/2602.06423"
+                target="_blank"
+                rel="noopener"
+              >
+                [arXiv]
+              </a>
+
+              <a
+                href="https://github.com/Shang-hub/HOMER-Official-Implementation"
+                target="_blank"
+                rel="noopener"
+              >
+                [Code]
+              </a>
             </span>
           </p>
         </li>
 
+
         <li>
-          <p class="pub-title">CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning for Trustworthy Abstention</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Aoqi Zuo, Wei Gao, Jing Ma · <em>ACL 2025</em>
+          <p class="pub-title">
+            CausalAbstain: Enhancing Multilingual LLMs with Causal Reasoning
+            for Trustworthy Abstention
+          </p>
+
+          <p class="pub-meta">
+            <strong>Yuxi Sun</strong>,
+            Aoqi Zuo,
+            Wei Gao,
+            Jing Ma ·
+            <em>ACL 2025</em>
+
             <span class="pub-links-inline">
-              <a href="https://aclanthology.org/2025.findings-acl.723/" target="_blank" rel="noopener">[Paper]</a>
-              <a href="https://arxiv.org/abs/2506.00519" target="_blank" rel="noopener">[arXiv]</a>
-              <a href="https://github.com/peachch/CausalAbstain" target="_blank" rel="noopener">[Code]</a>
+              <a
+                href="https://aclanthology.org/2025.findings-acl.723/"
+                target="_blank"
+                rel="noopener"
+              >
+                [Paper]
+              </a>
+
+              <a
+                href="https://arxiv.org/abs/2506.00519"
+                target="_blank"
+                rel="noopener"
+              >
+                [arXiv]
+              </a>
+
+              <a
+                href="https://github.com/peachch/CausalAbstain"
+                target="_blank"
+                rel="noopener"
+              >
+                [Code]
+              </a>
             </span>
           </p>
         </li>
 
+
         <li>
-          <p class="pub-title">SHARP: Unlocking Interactive Hallucination via Stance Transfer in Role-Playing LLMs</p>
-          <p class="pub-meta">Chuyi Kong, Ziyang Luo, Hongzhan Lin, Zhiyuan Fan, Yaxin Fan, <strong>Yuxi Sun</strong>, Jing Ma · <em>ACL 2025</em>
+          <p class="pub-title">
+            SHARP: Unlocking Interactive Hallucination via Stance Transfer
+            in Role-Playing LLMs
+          </p>
+
+          <p class="pub-meta">
+            Chuyi Kong,
+            Ziyang Luo,
+            Hongzhan Lin,
+            Zhiyuan Fan,
+            Yaxin Fan,
+            <strong>Yuxi Sun</strong>,
+            Jing Ma ·
+            <em>ACL 2025</em>
+
             <span class="pub-links-inline">
-              <a href="https://aclanthology.org/2025.findings-acl.47/" target="_blank" rel="noopener">[Paper]</a>
-              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bPDQJ-cAAAAJ&authuser=1&citation_for_view=bPDQJ-cAAAAJ:u5HHmVD_uO8C" target="_blank" rel="noopener">[Scholar]</a>
+              <a
+                href="https://aclanthology.org/2025.findings-acl.47/"
+                target="_blank"
+                rel="noopener"
+              >
+                [Paper]
+              </a>
+
+              <a
+                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bPDQJ-cAAAAJ&authuser=1&citation_for_view=bPDQJ-cAAAAJ:u5HHmVD_uO8C"
+                target="_blank"
+                rel="noopener"
+              >
+                [Scholar]
+              </a>
             </span>
           </p>
         </li>
 
+
         <li>
-          <p class="pub-title">Explainable Ethical Assessment on Human Behaviors by Generating Conflicting Social Norms</p>
-          <p class="pub-meta"><strong>Yuxi Sun</strong>, Wei Gao, Hongzhan Lin, Jing Ma, Wenxuan Zhang · <em>IJCNLP-AACL 2025</em>
+          <p class="pub-title">
+            Explainable Ethical Assessment on Human Behaviors by Generating
+            Conflicting Social Norms
+          </p>
+
+          <p class="pub-meta">
+            <strong>Yuxi Sun</strong>,
+            Wei Gao,
+            Hongzhan Lin,
+            Jing Ma,
+            Wenxuan Zhang ·
+            <em>IJCNLP-AACL 2025</em>
+
             <span class="pub-links-inline">
-              <a href="https://aclanthology.org/2025.ijcnlp-long.11/" target="_blank" rel="noopener">[Paper]</a>
-              <a href="https://arxiv.org/abs/2512.15793" target="_blank" rel="noopener">[arXiv]</a>
-              <a href="https://github.com/peachch/ClarityEthic" target="_blank" rel="noopener">[Code]</a>
+              <a
+                href="https://aclanthology.org/2025.ijcnlp-long.11/"
+                target="_blank"
+                rel="noopener"
+              >
+                [Paper]
+              </a>
+
+              <a
+                href="https://arxiv.org/abs/2512.15793"
+                target="_blank"
+                rel="noopener"
+              >
+                [arXiv]
+              </a>
+
+              <a
+                href="https://github.com/peachch/ClarityEthic"
+                target="_blank"
+                rel="noopener"
+              >
+                [Code]
+              </a>
             </span>
           </p>
         </li>
+
       </ol>
     </section>
 
@@ -293,52 +947,119 @@
       <h2>Technical Report</h2>
 
       <div class="featured-paper">
+
         <div class="featured-image">
-          <img src="assets/papers/tabldm.png" alt="Xiaomi-TabLDM overview figure"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="featured-placeholder">Xiaomi-TabLDM overview figure</div>
+          <img
+            src="assets/papers/tabldm.png"
+            alt="Xiaomi-TabLDM overview figure"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <div class="featured-placeholder">
+            Xiaomi-TabLDM overview figure
+          </div>
         </div>
 
+
         <div class="featured-content">
+
           <div class="featured-topline">
-            <span class="featured-venue">arXiv 2026</span>
+            <span class="featured-venue">
+              arXiv 2026
+            </span>
           </div>
 
-          <h3>Xiaomi-TabLDM: A Tabular Foundation Model Technical Report</h3>
+          <h3>
+            Xiaomi-TabLDM: A Tabular Foundation Model Technical Report
+          </h3>
 
           <p class="featured-desc">
-            Xiaomi-TabLDM is a general-purpose tabular foundation model for classification and
-            regression via in-context learning. Pretrained on large-scale synthetic data generated
-            from structural causal models, it explores scalable synthetic priors, efficient model
-            scaling, and test-time scaling for strong cross-dataset generalization. Xiaomi-TabLDM
-            ranks 1st on OpenML-CTR23 regression and 2nd on regression across TALENT, TabArena,
-            and BCCO.
+            Xiaomi-TabLDM is a general-purpose tabular foundation model for
+            classification and regression via in-context learning.
+            Pretrained on large-scale synthetic data generated from structural
+            causal models, it explores scalable synthetic priors, efficient
+            model scaling, and test-time scaling for strong cross-dataset
+            generalization. Xiaomi-TabLDM ranks 1st on OpenML-CTR23 regression
+            and 2nd on regression across TALENT, TabArena, and BCCO.
           </p>
 
           <p class="featured-links">
-            <a href="https://arxiv.org/abs/2609.03880" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://github.com/xiaomi-research/xiaomi-tabldm" target="_blank" rel="noopener">Code</a>
+            <a
+              href="https://arxiv.org/abs/2609.03880"
+              target="_blank"
+              rel="noopener"
+            >
+              arXiv
+            </a>
+
+            <a
+              href="https://github.com/xiaomi-research/xiaomi-tabldm"
+              target="_blank"
+              rel="noopener"
+            >
+              Code
+            </a>
           </p>
+
         </div>
       </div>
     </section>
 
 
-    <!-- ===== 联系方式 ===== -->
+    <!-- ===== Contact ===== -->
     <section id="contact">
       <h2>Contact</h2>
+
       <ul class="contact-list">
-        <li>Email: <a href="mailto:23483628@life.hkbu.edu.hk">23483628@life.hkbu.edu.hk</a></li>
-        <li>GitHub: <a href="https://github.com/peachch" target="_blank" rel="noopener">github.com/peachch</a></li>
-        <li>Google Scholar: <a href="https://scholar.google.com/citations?user=bPDQJ-cAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Yuxi Sun</a></li>
+
+        <li>
+          Email:
+          <a href="mailto:23483628@life.hkbu.edu.hk">
+            23483628@life.hkbu.edu.hk
+          </a>
+        </li>
+
+        <li>
+          GitHub:
+          <a
+            href="https://github.com/peachch"
+            target="_blank"
+            rel="noopener"
+          >
+            github.com/peachch
+          </a>
+        </li>
+
+        <li>
+          Google Scholar:
+          <a
+            href="https://scholar.google.com/citations?user=bPDQJ-cAAAAJ&hl=en&authuser=1"
+            target="_blank"
+            rel="noopener"
+          >
+            Yuxi Sun
+          </a>
+        </li>
+
       </ul>
     </section>
 
   </main>
 
+
+  <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Yuxi Sun · Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+      <p>
+        © 2026 Yuxi Sun · Powered by
+        <a
+          href="https://pages.github.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub Pages
+        </a>
+      </p>
     </div>
   </footer>
 
