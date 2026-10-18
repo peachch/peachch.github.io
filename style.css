@@ -162,9 +162,10 @@ section {
 
 .avatar {
   width: 230px;
-  height: 230px;
+  height: 290px;
   border-radius: 12px;
   object-fit: cover;
+  object-position: 60% 40%;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
