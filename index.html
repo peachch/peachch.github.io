@@ -15,7 +15,7 @@
 
   <meta
     name="description"
-    content="Personal homepage of Yuxi Sun — researcher working on trustworthy and controllable LLM agents, reliable reasoning, fact-checking, RAG, causal LLMs, and multi-agent systems."
+    content="Personal homepage of Yuxi Sun — Ph.D. candidate at Hong Kong Baptist University working on trustworthy LLMs: diagnostic evaluation, causality for reliable reasoning, and fact-checking."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -199,12 +199,36 @@
         </p>
 
         <p>
-          My research focuses on building
-          <strong>trustworthy and controllable LLM agents</strong>.
-          I am broadly interested in reliable reasoning, fact-checking,
-          retrieval-augmented generation, graph-based retrieval, causal LLMs,
-          multi-agent systems, uncertainty-aware abstention,
-          hallucination mitigation, and reliable evaluation.
+          My research focuses on building <strong>trustworthy LLMs</strong>
+          by understanding <em>why</em> they fail, not just <em>whether</em>
+          they fail. My work spans three connected threads:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Diagnostic evaluation</strong>: evaluating LLMs beyond
+            final scores, e.g., conditioning on internal epistemic states
+            (PAVE), step-level reasoning faithfulness (FACT-E), and
+            disentangled fairness auditing
+            (<a
+              href="https://openreview.net/forum?id=uV0rgJTKV7"
+              target="_blank"
+              rel="noopener"
+            >DF-Audit</a>).
+          </li>
+          <li>
+            <strong>Causality for reliable reasoning</strong>: using causal
+            tools to assess and improve LLM reasoning and abstention
+            (FACT-E, CausalAbstain).
+          </li>
+          <li>
+            <strong>Fact-checking and hallucination</strong>: verifying claims
+            against evidence and mitigating hallucination (REFLEX, SHARP).
+          </li>
+        </ul>
+
+        <p>
+          I am currently extending this line of work to LLM agents.
         </p>
       </div>
 
@@ -343,21 +367,21 @@
 
       <ul class="interests">
         <li>
-          <strong>Trustworthy &amp; Reliable LLMs</strong>:
-          faithful reasoning, uncertainty-aware decision making,
-          causal analysis, and reliability evaluation
+          <strong>Diagnostic Evaluation of LLMs</strong>:
+          knowledge conflict, reasoning faithfulness,
+          and fairness auditing
+        </li>
+
+        <li>
+          <strong>Causality for Reliable Reasoning</strong>:
+          causal analysis of reasoning, knowledge boundaries,
+          and trustworthy abstention
         </li>
 
         <li>
           <strong>Evidence-Grounded Language Models</strong>:
           fact-checking, retrieval-augmented generation,
-          and structured / graph-based retrieval
-        </li>
-
-        <li>
-          <strong>LLM Agents &amp; Multi-Agent Systems</strong>:
-          reliable agentic reasoning, collaboration,
-          and coordination for complex tasks
+          and hallucination mitigation
         </li>
       </ul>
     </section>
